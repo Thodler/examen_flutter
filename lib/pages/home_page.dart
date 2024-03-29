@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    tasks = TaskService().getAllAttraction();
+    tasks = TaskService().getAll();
   }
 
   @override

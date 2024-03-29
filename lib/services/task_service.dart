@@ -12,7 +12,7 @@ class TaskService {
     databaseService = DatabaseService();
   }
 
-  Future<List<Task>> getAllAttraction() async{
+  Future<List<Task>> getAll() async{
     Database db = await databaseService.initDatabase();
 
     final List<Map<String, dynamic>> tasksMaps = await db.query(_table);
